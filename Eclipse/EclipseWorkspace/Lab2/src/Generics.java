@@ -39,20 +39,20 @@ interface IPred<T>{
 	boolean apply(T t);
 }
 
-class BookByAuthor implements IPred<Book>{
-	public boolean apply(Book b) {
-		return b.author.equals("JKR");
-	}
-}
-class RunnerPosUnder50 implements IPred<Runner>{
-	public boolean apply(Runner r) {
-		return r.pos <= 50;
-	}
-}
-
-class Examples {
-	Examples(){}
-	 
-	IPred<Book> byAuthor = new BookByAuthor();
-	IPred<Runner> byRunner = new RunnerPosUnder50();
-}
+//class BookByAuthor implements IPred<Book>{
+//	public boolean apply(Book b) {
+//		return b.author.equals("JKR");
+//	}
+//}
+//class RunnerPosUnder50 implements IPred<Runner>{
+//	public boolean apply(Runner r) {
+//		return r.pos <= 50;
+//	}
+//}
+//
+//class Examples {
+//	Examples(){}
+//	 
+//	IPred<Book> byAuthor = new BookByAuthor();
+//	IPred<Runner> byRunner = new RunnerPosUnder50();
+//}
